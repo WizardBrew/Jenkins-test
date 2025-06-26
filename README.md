@@ -1,3 +1,7 @@
+Tests 
+![image](https://github.com/user-attachments/assets/4f7fb827-e68f-421a-bb55-48af7b2e4e95)
+
+
 🚀 Jenkins CI Setup with Spring PetClinic
 This repository documents the step-by-step process for installing Jenkins on a Linux environment 🐧 and configuring it for a basic CI pipeline using the 🌸 Spring PetClinic project.
 
@@ -56,6 +60,7 @@ bash
 java -jar target/spring-petclinic-*.jar --server.port=8084
 
 -------------===========------------------
+
 ☕ Method 2: WAR File Installation (Portable Jenkins)
 ⬇️ Step 1: Download WAR
 🔗 https://updates.jenkins-ci.org/download/war/
@@ -99,10 +104,10 @@ java -jar filename.jar --server.port=8084
 This project setup is open-source and reusable ✨. Customize it for your own CI/CD experiments and happy building! 🏗️
 
 Let me know if you'd like a badge section, .gitignore, or Docker setup next 🐳💡
-Tests 
-![image](https://github.com/user-attachments/assets/4f7fb827-e68f-421a-bb55-48af7b2e4e95)
 
+
+```
 
 Test5
 ![image](https://github.com/user-attachments/assets/36e61c05-91a0-489f-add1-299784006ea9)
-
+```
