@@ -66,7 +66,9 @@ java -jar jenkins.war --httpPort=8082
 🐳 Method 3: Docker-based Jenkins (coming soon)
 Containerize your Jenkins setup for portability and ease of deployment 🐋
 
+
 ------------===============----------------
+
 🧰 Troubleshooting
 ❌ Port Already in Use
 bash
