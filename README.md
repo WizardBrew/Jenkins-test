@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4f7fb827-e68f-421a-bb55-48af7b2e4e95" alt="Test" width="500" style="display: inline-block;"/>
-  <span style="display: inline-block; width: 500px;"></span>
+  <span style="display: inline-block; width: 100px;"></span><span style="display: inline-block; width: 100px;"></span><span style="display: inline-block; width: 100px;"></span>
   <img src="https://github.com/user-attachments/assets/36e61c05-91a0-489f-add1-299784006ea9" alt="Test5" width="500" style="display: inline-block;"/>
 </p>
 
