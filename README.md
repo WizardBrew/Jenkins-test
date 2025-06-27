@@ -8,8 +8,8 @@ This repository documents the step-by-step process for installing Jenkins on a L
 🔧 Method 1: Jenkins Native Installation (Linux)
 
 🛠 Step 1: System Update
-```bash
-sudo apt update && sudo apt upgrade -y```
+`bash`
+```sudo apt update && sudo apt upgrade -y```
 
 ☕ Step 2: Install Java (JDK 17 or 21 Recommended)
 ```bash
