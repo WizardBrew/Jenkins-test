@@ -8,37 +8,37 @@ This repository documents the step-by-step process for installing Jenkins on a L
 🔧 Method 1: Jenkins Native Installation (Linux)
 
 🛠 Step 1: System Update
-bash
-sudo apt update && sudo apt upgrade -y
+```bash
+sudo apt update && sudo apt upgrade -y```
 
 ☕ Step 2: Install Java (JDK 17 or 21 Recommended)
-bash
-sudo apt install openjdk-17-jdk-headless
+```bash
+sudo apt install openjdk-17-jdk-headless```
 
 🔐 Step 3: Add Jenkins Repository and Key
 Option 1 (curl):
-bash
-curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+```bash
+curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null```
 
 Option 2 (wget):
-bash
-sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
-Add Jenkins repo source:
+```bash
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key```
 
-bash
-echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+Add Jenkins repo source:
+```bash
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null```
 
 📦 Step 4: Install Jenkins
-bash
+```bash
 sudo apt update
-sudo apt install jenkins -y
+sudo apt install jenkins -y```
 
 🚦 Step 5: Start Jenkins and Get Initial Password
 bash
-sudo systemctl start jenkins
+```sudo systemctl start jenkins
 sudo systemctl enable jenkins
 sudo systemctl status jenkins
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword```
 
 🌐 Access Jenkins at: http://localhost:8080
 
@@ -46,7 +46,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 📚 Step 6: Install Maven & Git
 bash
-sudo apt install maven git -y
+```sudo apt install maven git -y```
 
 📂 Step 7: Create Freestyle Project in Jenkins
 🔗 Use Repo: https://github.com/spring-projects/spring-petclinic
@@ -57,7 +57,7 @@ sudo apt install maven git -y
 
 ▶️ Step 8: Run Spring Application
 bash
-java -jar target/spring-petclinic-*.jar --server.port=8084
+```java -jar target/spring-petclinic-*.jar --server.port=8080```
 
 -------------===========------------------
 
@@ -67,7 +67,7 @@ java -jar target/spring-petclinic-*.jar --server.port=8084
 
 🚀 Step 2: Run Jenkins WAR
 bash
-java -jar jenkins.war --httpPort=8082
+```java -jar jenkins.war --httpPort=8082```
 🐳 Method 3: Docker-based Jenkins (coming soon)
 Containerize your Jenkins setup for portability and ease of deployment 🐋
 
@@ -77,9 +77,11 @@ Containerize your Jenkins setup for portability and ease of deployment 🐋
 🧰 Troubleshooting
 ❌ Port Already in Use
 bash
-sudo apt install lsof
+```sudo apt install lsof
 sudo lsof -i :8080
-sudo kill -9 <PID>
+sudo kill -9 <PID>```
+
+
 🔒 GitHub Clone Issues
 ✅ Confirm Git is installed
 
@@ -106,8 +108,6 @@ This project setup is open-source and reusable ✨. Customize it for your own CI
 Let me know if you'd like a badge section, .gitignore, or Docker setup next 🐳💡
 
 
-```
-
 Test5
 ![image](https://github.com/user-attachments/assets/36e61c05-91a0-489f-add1-299784006ea9)
-```
+
