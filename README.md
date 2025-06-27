@@ -1,12 +1,12 @@
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/4f7fb827-e68f-421a-bb55-48af7b2e4e95" width="500"/><br>
+      <img src="https://github.com/user-attachments/assets/4f7fb827-e68f-421a-bb55-48af7b2e4e95" width="800"/><br>
       <strong>Test</strong>
     </td>
     <td style="width: 100px;"></td> <!-- Acts as spacer -->
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/36e61c05-91a0-489f-add1-299784006ea9" width="500"/><br>
+      <img src="https://github.com/user-attachments/assets/36e61c05-91a0-489f-add1-299784006ea9" width="800"/><br>
       <strong>Test5</strong>
     </td>
   </tr>
