@@ -12,25 +12,25 @@ This repository documents the step-by-step process for installing Jenkins on a L
 ```sudo apt update && sudo apt upgrade -y```
 
 ☕ Step 2: Install Java (JDK 17 or 21 Recommended)
-```bash
-sudo apt install openjdk-17-jdk-headless```
+`bash`
+```sudo apt install openjdk-17-jdk-headless```
 
 🔐 Step 3: Add Jenkins Repository and Key
 Option 1 (curl):
-```bash
-curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null```
+`bash`
+```curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null```
 
 Option 2 (wget):
-```bash
-sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key```
+`bash`
+```sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key```
 
 Add Jenkins repo source:
-```bash
-echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null```
+`bash`
+```echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null```
 
 📦 Step 4: Install Jenkins
-```bash
-sudo apt update
+`bash`
+```sudo apt update
 sudo apt install jenkins -y```
 
 🚦 Step 5: Start Jenkins and Get Initial Password
@@ -68,6 +68,8 @@ bash
 🚀 Step 2: Run Jenkins WAR
 bash
 ```java -jar jenkins.war --httpPort=8082```
+
+
 🐳 Method 3: Docker-based Jenkins (coming soon)
 Containerize your Jenkins setup for portability and ease of deployment 🐋
 
