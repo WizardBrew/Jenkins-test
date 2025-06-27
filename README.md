@@ -20,7 +20,7 @@ Option 1 (curl):
 `bash`
 ```curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null```
 
-Option 2 (wget):
+Option 2 (get):
 `bash`
 ```sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key```
 
@@ -28,13 +28,14 @@ Add Jenkins repo source:
 `bash`
 ```echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null```
 
+
 📦 Step 4: Install Jenkins
 `bash`
 ```sudo apt update
-sudo apt install jenkins -y```
+sudo apt install jenkins -y ```
 
 🚦 Step 5: Start Jenkins and Get Initial Password
-bash
+`bash`
 ```sudo systemctl start jenkins
 sudo systemctl enable jenkins
 sudo systemctl status jenkins
@@ -45,18 +46,17 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword```
 🔁 Continuous Integration Setup
 
 📚 Step 6: Install Maven & Git
-bash
+`bash`
 ```sudo apt install maven git -y```
 
 📂 Step 7: Create Freestyle Project in Jenkins
-🔗 Use Repo: https://github.com/spring-projects/spring-petclinic
+*🔗 Use Repo: https://github.com/spring-projects/spring-petclinic*
 
 🧪 Build Step: mvn clean install
-
 📁 Output file: target/spring-petclinic-*.jar
 
 ▶️ Step 8: Run Spring Application
-bash
+`bash`
 ```java -jar target/spring-petclinic-*.jar --server.port=8080```
 
 -------------===========------------------
