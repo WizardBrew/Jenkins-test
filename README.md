@@ -1,13 +1,12 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4f7fb827-e68f-421a-bb55-48af7b2e4e95" alt="Test" width="500"/>
-  <br>
-  <img src="https://github.com/user-attachments/assets/36e61c05-91a0-489f-add1-299784006ea9" alt="Test5" width="500"/>
+  <img src="https://github.com/user-attachments/assets/4f7fb827-e68f-421a-bb55-48af7b2e4e95" alt="Test" width="500" style="display: inline-block;"/>
+  <span style="display: inline-block; width: 100px;"></span>
+  <img src="https://github.com/user-attachments/assets/36e61c05-91a0-489f-add1-299784006ea9" alt="Test5" width="500" style="display: inline-block;"/>
 </p>
 
 <p align="center">
-  <strong>Test</strong> &nbsp;&nbsp;&nbsp;&nbsp; <strong>Test5</strong>
+  <strong>Test</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Test5</strong>
 </p>
-
 🚀 Jenkins CI Setup with Spring PetClinic
 This repository documents the step-by-step process for installing Jenkins on a Linux environment 🐧 and configuring it for a basic CI pipeline using the 🌸 Spring PetClinic project.
 
